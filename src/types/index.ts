@@ -58,38 +58,6 @@ export interface Testimonial {
   verified?: boolean;
 }
 
-export interface BlogPost {
-  id: string;
-  slug: string;
-  title: string;
-  excerpt: string;
-  content: BlogBlock[];
-  coverImage: string;
-  author: string;
-  authorRole: string;
-  date: string;
-  readingTime: string;
-  category: string;
-  tags: string[];
-  featured?: boolean;
-}
-
-export type BlogBlock =
-  | { type: "heading"; text: string }
-  | { type: "paragraph"; text: string }
-  | { type: "list"; items: string[] }
-  | { type: "quote"; text: string; author?: string };
-
-export interface PricingItem {
-  id: string;
-  name: string;
-  description: string;
-  category: "General Dentistry" | "Cosmetic Dentistry" | "Orthodontics" | "Restorative Dentistry";
-  price: number;
-  duration: string;
-  popular?: boolean;
-}
-
 export interface AvailabilitySlot {
   date: string;
   time: string;
@@ -121,13 +89,6 @@ export interface Appointment {
   time: string;
   status: "scheduled" | "completed" | "cancelled";
   location: string;
-}
-
-export interface FAQ {
-  id: string;
-  question: string;
-  answer: string;
-  category: string;
 }
 
 export interface GalleryImage {
