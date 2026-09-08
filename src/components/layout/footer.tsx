@@ -130,14 +130,30 @@ export function Footer() {
       </div>
 
       <div className="border-t border-border/60">
-        <div className="container-dental flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
-          <p className="text-sm text-muted-foreground">
+        <div className="container-dental grid gap-4 py-6 sm:grid-cols-3 sm:items-center">
+          <p className="text-center text-sm text-muted-foreground sm:text-left">
             © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
           </p>
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
+          <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
             <Link href="/privacy" className="hover:text-primary">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-primary">Terms & Conditions</Link>
           </div>
+          <a
+            href="https://shei-it.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 sm:justify-end"
+            aria-label="Shei IT"
+          >
+            <Image
+              src="/Shei%20IT%20Logo.png"
+              alt="Shei IT"
+              width={22}
+              height={22}
+              className="size-[22px] rounded-full object-contain"
+            />
+            <span className="text-sm font-semibold text-foreground">SHEI IT</span>
+          </a>
         </div>
       </div>
     </footer>
