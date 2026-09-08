@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Mail, Clock, PhoneCall } from "lucide-react";
 import { FacebookIcon, InstagramIcon, TwitterIcon, LinkedinIcon, YoutubeIcon } from "@/components/ui/social-icons";
 import { siteConfig } from "@/lib/site";
@@ -31,14 +32,13 @@ export function Footer() {
         <div className="grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <Link href="/" className="flex items-center gap-2.5" aria-label={siteConfig.name + " home"}>
-              <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-5" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-                  <line x1="9" y1="9" x2="9.01" y2="9" />
-                  <line x1="15" y1="9" x2="15.01" y2="9" />
-                </svg>
-              </span>
+              <Image
+                src="/Dental%20Logo.png"
+                alt={`${siteConfig.name} logo`}
+                width={44}
+                height={44}
+                className="size-11 rounded-xl object-contain"
+              />
               <span>
                 <span className="block text-base font-bold leading-tight text-foreground">BrightSmile</span>
                 <span className="block text-[11px] font-medium uppercase tracking-wider text-muted-foreground">Dental Clinic</span>

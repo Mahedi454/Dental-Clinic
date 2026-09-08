@@ -25,7 +25,7 @@ export function ServiceCard({ service }: { service: Service }) {
             {React.createElement(getIcon(service.icon), { className: "size-5" })}
           </span>
           <Badge variant="secondary" className="bg-white/95 text-foreground">
-            From ${service.startingPrice}
+            From ৳{service.startingPrice.toLocaleString("en-US")}
           </Badge>
         </div>
       </div>

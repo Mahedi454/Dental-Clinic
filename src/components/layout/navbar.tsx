@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { Menu, Phone, Calendar, ChevronDown, X } from "lucide-react";
+import { Menu, Calendar, ChevronDown, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { services } from "@/data/services";
@@ -26,25 +27,18 @@ const navLinks = [
 function Logo() {
   return (
     <Link href="/" className="flex items-center gap-2.5" aria-label={siteConfig.name + " home"}>
-      <span className="flex size-9 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-        <SmileIcon className="size-5" />
-      </span>
+      <Image
+        src="/Dental%20Logo.png"
+        alt={`${siteConfig.name} logo`}
+        width={44}
+        height={44}
+        className="size-11 rounded-xl object-contain"
+      />
       <span className="hidden sm:block">
         <span className="block text-base font-bold leading-tight text-foreground">BrightSmile</span>
         <span className="block text-[11px] font-medium uppercase tracking-wider text-muted-foreground">Dental Clinic</span>
       </span>
     </Link>
-  );
-}
-
-function SmileIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
-      <circle cx="12" cy="12" r="10" />
-      <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-      <line x1="9" y1="9" x2="9.01" y2="9" />
-      <line x1="15" y1="9" x2="15.01" y2="9" />
-    </svg>
   );
 }
 
@@ -169,12 +163,6 @@ export function Navbar() {
                 Book Appointment
               </Link>
             </Button>
-            <Button asChild size="lg" className="h-10">
-              <Link href="/emergency" className="!bg-red-600 hover:!bg-red-700">
-                <Phone className="size-4" />
-                Emergency
-              </Link>
-            </Button>
           </div>
 
           <button
@@ -227,12 +215,6 @@ export function Navbar() {
                   <Link href="/appointments">
                     <Calendar className="size-4" />
                     Book Appointment
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="w-full">
-                  <Link href="/emergency">
-                    <Phone className="size-4" />
-                    Emergency Care
                   </Link>
                 </Button>
               </div>

@@ -53,6 +53,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/Dental%20Logo.png",
+    apple: "/Dental%20Logo.png",
+  },
 };
 
 export const viewport: Viewport = {

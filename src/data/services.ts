@@ -7,12 +7,12 @@ export const services: Service[] = [
     name: "General Dentistry",
     category: "General Dentistry",
     icon: "Stethoscope",
-    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=600&fit=crop",
+    image: "/General%20Dentistry.jpg",
     shortDescription:
       "Comprehensive checkups, cleanings, and preventive care to keep your smile healthy and catch issues early.",
     description:
       "General dentistry is the foundation of good oral health. Our general dentistry services provide comprehensive checkups, professional cleanings, and preventive care designed to keep your teeth and gums healthy. Regular visits allow our dentists to detect potential issues early when they're easier to treat and more affordable.",
-    startingPrice: 89,
+    startingPrice: 1000,
     duration: "30-60 min",
     benefits: [
       "Early detection of dental problems",
@@ -48,12 +48,12 @@ export const services: Service[] = [
     name: "Teeth Cleaning",
     category: "General Dentistry",
     icon: "Sparkles",
-    image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&h=600&fit=crop",
+    image: "/Teeth%20Cleaning.webp",
     shortDescription:
       "Professional cleaning that removes plaque, tartar, and stains for a fresher, brighter smile.",
     description:
       "Professional teeth cleaning is the cornerstone of preventive dental care. Using specialized instruments, our hygienists gently remove plaque and tartar that regular brushing can't reach. This not only keeps your smile looking its best but also helps prevent cavities, gum disease, and bad breath.",
-    startingPrice: 99,
+    startingPrice: 3500,
     duration: "45-60 min",
     benefits: [
       "Removes hardened plaque and tartar",
@@ -89,12 +89,12 @@ export const services: Service[] = [
     name: "Teeth Whitening",
     category: "Cosmetic Dentistry",
     icon: "Sun",
-    image: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=800&h=600&fit=crop",
+    image: "/Teeth%20Whitening.webp",
     shortDescription:
       "Professional whitening treatments that brighten your smile by several shades in a single visit.",
     description:
       "Our professional teeth whitening treatments deliver dramatic results safely and effectively. Using advanced whitening technology and enamel-safe formulations, we can brighten your smile by several shades in a single office visit or with convenient take-home kits. Say goodbye to coffee, tea, and wine stains.",
-    startingPrice: 249,
+    startingPrice: 15000,
     duration: "60-90 min",
     benefits: [
       "Brightens teeth up to 8 shades",
@@ -129,12 +129,12 @@ export const services: Service[] = [
     name: "Dental Implants",
     category: "Restorative Dentistry",
     icon: "Anchor",
-    image: "https://images.unsplash.com/photo-1587560699334-bea93391dcef?w=800&h=600&fit=crop",
+    image: "/Dental%20Implants.jpg",
     shortDescription:
       "Permanent, natural-looking tooth replacement that restores function and confidence.",
     description:
       "Dental implants are the gold standard for replacing missing teeth. A titanium post is surgically placed in the jaw to act as a replacement root, topped with a natural-looking crown. Implants look, feel, and function like natural teeth, providing a permanent solution that preserves jaw structure and restores chewing power.",
-    startingPrice: 1899,
+    startingPrice: 80000,
     duration: "2-6 months (multiple visits)",
     benefits: [
       "Looks and functions like natural teeth",
@@ -170,12 +170,12 @@ export const services: Service[] = [
     name: "Root Canal",
     category: "General Dentistry",
     icon: "Activity",
-    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=600&fit=crop",
+    image: "/Root%20Canal.webp",
     shortDescription:
       "Pain-free root canal treatment that saves infected teeth and relieves discomfort.",
     description:
       "Root canal therapy is a modern, virtually painless procedure that saves teeth with infected or damaged pulp. By removing the infected tissue, cleaning the canals, and sealing the tooth, we eliminate pain, prevent spread of infection, and preserve your natural tooth.",
-    startingPrice: 749,
+    startingPrice: 12000,
     duration: "60-90 min",
     benefits: [
       "Saves your natural tooth",
@@ -210,12 +210,12 @@ export const services: Service[] = [
     name: "Braces",
     category: "Orthodontics",
     icon: "AlignCenter",
-    image: "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?w=800&h=600&fit=crop",
+    image: "/Braces.jpg",
     shortDescription:
       "Traditional braces that straighten teeth and correct bite issues for a healthier smile.",
     description:
       "Traditional braces are a proven, highly effective way to straighten teeth and correct bite issues. Modern braces are smaller, more comfortable, and more efficient than ever. They can correct crowded teeth, gaps, overbites, underbites, and other alignment problems in children, teens, and adults.",
-    startingPrice: 1499,
+    startingPrice: 80000,
     duration: "18-30 months",
     benefits: [
       "Corrects a wide range of alignment issues",
@@ -251,12 +251,12 @@ export const services: Service[] = [
     name: "Veneers",
     category: "Cosmetic Dentistry",
     icon: "Layers",
-    image: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&h=600&fit=crop",
+    image: "/Veneers.jpg",
     shortDescription:
       "Ultra-thin porcelain shells that transform the shape, color, and size of your teeth.",
     description:
       "Porcelain veneers are ultra-thin, custom-made shells bonded to the front of teeth to improve their appearance. They can correct discoloration, chips, gaps, minor misalignment, and oddly shaped teeth. Veneers are a popular choice for a dramatic yet natural-looking smile transformation.",
-    startingPrice: 1099,
+    startingPrice: 20000,
     duration: "2-3 visits",
     benefits: [
       "Transform the appearance of your smile",
@@ -291,12 +291,12 @@ export const services: Service[] = [
     name: "Pediatric Dentistry",
     category: "Pediatric Dentistry",
     icon: "Baby",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=600&fit=crop",
+    image: "/Pediatric%20Dentistry.jpg",
     shortDescription:
       "Gentle, fun dental care designed specifically for children of all ages.",
     description:
       "Our pediatric dentistry focuses on the oral health of children from infancy through the teenage years. Dr. Rodriguez and her team have created a warm, child-friendly environment where little ones feel safe and even excited to visit the dentist. We provide everything from the first dental visit to preventive care and gentle treatment.",
-    startingPrice: 79,
+    startingPrice: 3000,
     duration: "30-45 min",
     benefits: [
       "Child-friendly, welcoming environment",
@@ -332,12 +332,12 @@ export const services: Service[] = [
     name: "Invisalign & Clear Aligners",
     category: "Orthodontics",
     icon: "Zap",
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=600&fit=crop",
+    image: "/Invisalign%20%26%20Clear%20Aligners.jpg",
     shortDescription:
       "Discreet, removable clear aligners that straighten teeth without traditional braces.",
     description:
       "Invisalign uses a series of custom-made, clear, removable aligners to gradually straighten your teeth. Nearly invisible, they let you straighten your smile discreetly without the look of traditional braces. Aligners are removed for eating, brushing, and flossing, making oral hygiene simple.",
-    startingPrice: 1999,
+    startingPrice: 350000,
     duration: "6-18 months",
     benefits: [
       "Nearly invisible while straightening",
@@ -372,12 +372,12 @@ export const services: Service[] = [
     name: "Smile Makeover",
     category: "Cosmetic Dentistry",
     icon: "Smile",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=600&fit=crop",
+    image: "/Smile%20Makeover.jpg",
     shortDescription:
       "A complete, personalized transformation combining multiple cosmetic treatments.",
     description:
       "A smile makeover is a comprehensive, personalized plan that combines multiple cosmetic treatments to transform your smile. Dr. Mitchell works with you to design the smile you've always wanted, combining treatments like veneers, whitening, and bonding for a complete, natural-looking transformation.",
-    startingPrice: 2499,
+    startingPrice: 150000,
     duration: "2-4 weeks (multiple visits)",
     benefits: [
       "Fully personalized treatment plan",
@@ -412,12 +412,12 @@ export const services: Service[] = [
     name: "Dental Crowns & Bridges",
     category: "Restorative Dentistry",
     icon: "HardHat",
-    image: "https://images.unsplash.com/photo-1588776811113-ef4db7a240e8?w=800&h=600&fit=crop",
+    image: "/Dental%20Crowns%20%26%20Bridges.jpg",
     shortDescription:
       "Strong, natural-looking crowns and bridges that restore damaged or missing teeth.",
     description:
       "Dental crowns and bridges restore the function and appearance of damaged or missing teeth. Crowns are custom caps placed over damaged teeth to restore their shape, size, and strength. Bridges literally bridge the gap created by missing teeth, keeping adjacent teeth properly aligned.",
-    startingPrice: 899,
+    startingPrice: 15000,
     duration: "2 visits",
     benefits: [
       "Restores damaged or missing teeth",
@@ -452,12 +452,12 @@ export const services: Service[] = [
     name: "Periodontal (Gum) Treatment",
     category: "Specialized Care",
     icon: "Shield",
-    image: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800&h=600&fit=crop",
+    image: "/Periodontal%20%28Gum%29%20Treatment.jpg",
     shortDescription:
       "Expert treatment for gum disease to protect your teeth and overall health.",
     description:
       "Periodontal disease affects the gums and supporting structures of the teeth. Left untreated, it can lead to tooth loss and has been linked to serious health conditions. Our periodontist provides comprehensive treatment for gum disease, from non-surgical scaling and root planing to advanced laser therapy.",
-    startingPrice: 349,
+    startingPrice: 10000,
     duration: "Varies by treatment",
     benefits: [
       "Stops the progression of gum disease",

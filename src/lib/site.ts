@@ -5,7 +5,7 @@ export const siteConfig = {
   description:
     "Modern, compassionate dental care for healthy smiles and confident lives. Expert dentists, advanced technology, and patient-centered care in a comfortable environment.",
   url: "https://brightsmile-dental.example.com",
-  logo: "/logo.svg",
+  logo: "/Dental%20Logo.png",
   phone: "(555) 123-4567",
   phoneHref: "tel:+15551234567",
   emergencyPhone: "(555) 911-8901",

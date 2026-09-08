@@ -262,7 +262,7 @@ function AppointmentFlowInner() {
                         )}
                       >
                         <p className="font-semibold text-foreground">{s.name}</p>
-                        <p className="mt-1 text-xs text-muted-foreground">From ${s.startingPrice} • {s.duration}</p>
+                        <p className="mt-1 text-xs text-muted-foreground">From ৳{s.startingPrice.toLocaleString("en-US")} • {s.duration}</p>
                       </button>
                     ))}
                   </div>
@@ -426,7 +426,7 @@ function AppointmentFlowInner() {
                       </div>
                       <div className="rounded-lg border-t pt-4">
                         <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">Treatment Cost</p>
-                        <p className="mt-1 text-2xl font-bold text-foreground">From ${service?.startingPrice}</p>
+                        <p className="mt-1 text-2xl font-bold text-foreground">From ৳{service?.startingPrice.toLocaleString("en-US")}</p>
                         <p className="text-xs text-muted-foreground">Final cost confirmed after consultation. Insurance may cover part of this.</p>
                       </div>
                     </div>

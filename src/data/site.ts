@@ -2,7 +2,6 @@ export const stats = [
   { label: "Patients Treated", value: 12000, suffix: "+", icon: "Users" },
   { label: "Years of Experience", value: 15, suffix: "+", icon: "Award" },
   { label: "Expert Dentists", value: 6, suffix: "", icon: "Stethoscope" },
-  { label: "Successful Treatments", value: 25000, suffix: "+", icon: "Smile" },
 ];
 
 export const treatmentProcess = [
@@ -62,7 +61,7 @@ export const whyChooseUs = [
   {
     title: "Transparent Pricing",
     description: "Clear, upfront treatment costs with flexible payment options and no hidden fees.",
-    icon: "BadgeDollarSign",
+    icon: "Tag",
   },
 ];
 

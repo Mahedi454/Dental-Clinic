@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { Calendar, Phone, ShieldCheck, Star, Siren } from "lucide-react";
+import { Calendar, Phone, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site";
 
@@ -57,28 +57,6 @@ export function Hero() {
                 Call Now
               </a>
             </Button>
-            <Button asChild variant="ghost" size="lg" className="h-12 px-4 text-base text-red-600 hover:bg-red-50">
-              <Link href="/emergency">
-                <Siren className="size-5" />
-                Emergency
-              </Link>
-            </Button>
-          </motion.div>
-
-          <motion.div
-            variants={reduceMotion ? undefined : item}
-            className="mt-10 flex flex-wrap items-center gap-6 text-sm text-muted-foreground"
-          >
-            <span className="flex items-center gap-1.5">
-              <Star className="size-4 fill-amber-400 text-amber-400" />
-              <Star className="size-4 fill-amber-400 text-amber-400" />
-              <Star className="size-4 fill-amber-400 text-amber-400" />
-              <Star className="size-4 fill-amber-400 text-amber-400" />
-              <Star className="size-4 fill-amber-400 text-amber-400" />
-              <strong className="ml-1 text-foreground">4.9/5</strong>
-            </span>
-            <span className="hidden h-4 w-px bg-border sm:block" />
-            <span>Over 25,000 successful treatments</span>
           </motion.div>
         </motion.div>
 

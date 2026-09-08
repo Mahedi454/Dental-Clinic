@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Calendar, Check, Clock, DollarSign, ArrowRight } from "lucide-react";
+import { Calendar, Check, Clock, Tag, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
@@ -49,9 +49,9 @@ export default async function ServiceDetailPage({ params }: PageProps) {
               <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-foreground">{service.shortDescription}</p>
               <div className="mt-6 flex flex-wrap items-center gap-6">
                 <div className="flex items-center gap-2 text-sm">
-                  <DollarSign className="size-5 text-primary" />
+                  <Tag className="size-5 text-primary" />
                   <span>
-                    <strong className="text-foreground">From ${service.startingPrice}</strong>
+                    <strong className="text-foreground">From ৳{service.startingPrice.toLocaleString("en-US")}</strong>
                     <span className="text-muted-foreground"> starting</span>
                   </span>
                 </div>
@@ -159,7 +159,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
                 </div>
                 <div className="flex justify-between border-b pb-3">
                   <dt className="text-muted-foreground">Starting Price</dt>
-                  <dd className="font-medium text-foreground">From ${service.startingPrice}</dd>
+                  <dd className="font-medium text-foreground">From ৳{service.startingPrice.toLocaleString("en-US")}</dd>
                 </div>
                 <div className="flex justify-between border-b pb-3">
                   <dt className="text-muted-foreground">Duration</dt>
