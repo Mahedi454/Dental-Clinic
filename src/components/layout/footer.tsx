@@ -11,8 +11,6 @@ const quickLinks = [
   { label: "Doctors", href: "/doctors" },
   { label: "Before & After", href: "/before-after" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Testimonials", href: "/testimonials" },
-  { label: "Patient Portal", href: "/patient" },
 ];
 
 const footerServices = services.slice(0, 8).map((s) => ({ label: s.name, href: `/services/${s.slug}` }));

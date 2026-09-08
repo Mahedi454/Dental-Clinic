@@ -1,8 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowRight, Star } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Star } from "lucide-react";
 import { SectionHeader } from "@/components/ui/section-header";
 import { TestimonialCard } from "@/components/dental/testimonial-card";
 import { getTestimonialAverage, getTestimonialCount, testimonials } from "@/data/testimonials";
@@ -37,15 +35,6 @@ export function TestimonialsSection() {
           {display.map((t) => (
             <TestimonialCard key={t.id} testimonial={t} />
           ))}
-        </div>
-
-        <div className="mt-10 text-center">
-          <Button asChild variant="outline">
-            <Link href="/testimonials">
-              Read All Testimonials
-              <ArrowRight className="size-4" />
-            </Link>
-          </Button>
         </div>
       </div>
     </section>

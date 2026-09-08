@@ -13,13 +13,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/doctors",
     "/before-after",
     "/gallery",
-    "/testimonials",
     "/insurance",
     "/emergency",
     "/pediatric",
-    "/patient",
-    "/patient/appointments",
-    "/patient/profile",
   ].map((route) => ({
     url: `${base}${route}`,
     lastModified: new Date(),

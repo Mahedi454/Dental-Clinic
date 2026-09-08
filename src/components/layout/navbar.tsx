@@ -22,6 +22,7 @@ const navLinks = [
   },
   { label: "Doctors", href: "/doctors" },
   { label: "Before & After", href: "/before-after" },
+  { label: "Gallery", href: "/gallery" },
 ];
 
 function Logo() {

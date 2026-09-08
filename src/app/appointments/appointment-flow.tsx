@@ -184,9 +184,6 @@ function AppointmentFlowInner() {
           </div>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
-            <Button asChild>
-              <Link href="/patient">View My Appointments</Link>
-            </Button>
             <Button asChild variant="outline">
               <Link href="/">Back to Home</Link>
             </Button>
